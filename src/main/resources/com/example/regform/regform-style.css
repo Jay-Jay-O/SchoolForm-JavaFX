@@ -1,0 +1,26 @@
+.mainform {
+    -fx-pref-height: 800;
+    -fx-pref-width: 1200;
+}
+.header-text {
+    -fx-text-fill: #b22222;
+    -fx-font: bold 23 Calibri;
+}
+.normal-text {
+    -fx-text-fill: #b22222;
+    -fx-font: normal 11 Calibri;
+    -fx-line-spacing: 0px;
+}
+.bolded-normal-text {
+    -fx-text-fill: #b22222;
+    -fx-font: bold 11 Calibri;
+    -fx-line-spacing: 0px;
+}
+.subheader1-text {
+    -fx-text-fill: #b22222;
+    -fx-font: bold 18 Calibri;
+}
+.subheader2-text {
+    -fx-text-fill: #b22222;
+    -fx-font: bold 15 Calibri;
+}

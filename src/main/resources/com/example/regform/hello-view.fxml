@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regform.HelloController">
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="45.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="45.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView cache="true" fitHeight="77.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@BCTLogo.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="header-text" stylesheets="@regform-style.css" text="BAGUIO COLLEGE OF TECHNOLOGY" />
+                        <Label styleClass="normal-text" stylesheets="@regform-style.css" text="#37 Harrison Rd., Baguio City, Philippines&#10;Tel. Nos.: [074] 442-3743 / 424-0859 / 424-2036&#10;www.bct.edu.ph" />
+                     </children>
+                  </VBox>
+                  <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="subheader1-text" stylesheets="@regform-style.css" text="COLLEGE" textAlignment="RIGHT" underline="true" />
+                        <Label alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="subheader2-text" stylesheets="@regform-style.css" text="PRELIMINARY REGISTRATION FORM" underline="true" />
+                        <Label alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" styleClass="normal-text" stylesheets="@regform-style.css" text="Student's Copy" underline="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <GridPane GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="SEMESTER:" HBox.hgrow="ALWAYS" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="SCHOOL YR:" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="SUMMER:" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="DATE:" />
+                              <DatePicker maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="10.0" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="ID NUMBER:" HBox.hgrow="ALWAYS" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="COURSE:" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="MAJOR:" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="YR LEVEL:" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <GridPane alignment="CENTER" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="7.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="31.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="31.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="31.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" nodeOrientation="LEFT_TO_RIGHT" styleClass="subheader2-text" stylesheets="@regform-style.css" text="NAME:" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <children>
+                              <TextField alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" styleClass="normal-text" stylesheets="@regform-style.css" text="[FAMILY NAME]" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="89.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                           <children>
+                              <TextField alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" styleClass="normal-text" stylesheets="@regform-style.css" text="[FIRST NAME]" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="89.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                           <children>
+                              <TextField alignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" styleClass="normal-text" stylesheets="@regform-style.css" text="[MIDDLE NAME]" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <CheckBox alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="NEW" textAlignment="JUSTIFY" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                              <CheckBox alignment="CENTER" layoutX="75.0" layoutY="19.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="OLD" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                              <CheckBox alignment="CENTER" layoutX="10.0" layoutY="19.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="TRANSFEREE" textAlignment="JUSTIFY" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                              <CheckBox alignment="CENTER" layoutX="10.0" layoutY="19.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="CROSS ENROLLEE" textAlignment="JUSTIFY" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label alignment="CENTER" styleClass="normal-text" stylesheets="@regform-style.css" text="SCHOLARSHIP:" HBox.hgrow="ALWAYS" />
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <TableView editable="true" prefHeight="200.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+              <columns>
+                <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="CLASS CODE" />
+                <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="DESCRIPTIVE TITLE" />
+                        <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="TIME" />
+                  <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="DAY(S)" />
+                  <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="ROOM" />
+                  <TableColumn maxWidth="500.0" minWidth="-Infinity" prefWidth="198.0" text="UNITS" />
+              </columns>
+            </TableView>
+            <GridPane GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" styleClass="bolded-normal-text" stylesheets="@regform-style.css" text="FEES" />
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="12.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Tuition:" GridPane.rowIndex="1" />
+                        <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="28.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Lab Fee:" GridPane.rowIndex="2" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="22.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="61.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Hands-on Fee:" GridPane.rowIndex="3" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="58.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="84.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Misc. Fee:" GridPane.rowIndex="4" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="81.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="84.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Total Assessed Fee:" GridPane.rowIndex="5" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="81.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="130.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Less Discount:" GridPane.rowIndex="6" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="127.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="153.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Net Amount:" GridPane.rowIndex="7" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="150.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="176.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Previous Balance:" GridPane.rowIndex="8" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="173.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="199.0" styleClass="normal-text" stylesheets="@regform-style.css" text="TOTAL:" GridPane.rowIndex="9" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="196.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="222.0" styleClass="normal-text" stylesheets="@regform-style.css" text="Assessed By:" GridPane.rowIndex="11" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="209.0" layoutY="219.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="60.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="40.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" styleClass="bolded-normal-text" stylesheets="@regform-style.css" text="INITIAL PAYMENT" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="O.R. No.:" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField alignment="CENTER_RIGHT" layoutX="90.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="41.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="Amount:" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="72.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="Date:" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="35.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Label alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="19.0" styleClass="bolded-normal-text" stylesheets="@regform-style.css" text="PROMISSORY NOTE:" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                        <Label alignment="TOP_LEFT" styleClass="normal-text" stylesheets="@regform-style.css" text="I hereby agree to pay all the assessed fees, even if I stop studying. I am fully &#10;aware that MISCELLANEOUS FEES and TUITION FEES paid by installment are &#10;NOT REFUNDABLE." GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
+                        <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="19.0" styleClass="bolded-normal-text" stylesheets="@regform-style.css" text="Student's Signature" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="60.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="40.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin></TextField>
+                        <Label alignment="CENTER_RIGHT" styleClass="normal-text" stylesheets="@regform-style.css" text="Enrollment Adviser" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="208.0" layoutY="58.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label layoutX="208.0" layoutY="104.0" styleClass="normal-text" stylesheets="@regform-style.css" text="TOTAL UNIT(S):" textAlignment="RIGHT" GridPane.halignment="RIGHT" />
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="24.0" styleClass="bolded-normal-text" stylesheets="@regform-style.css" text="Approved by:" underline="true" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+                        <TextField alignment="CENTER_RIGHT" layoutX="208.0" layoutY="58.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="143.0" styleClass="normal-text" stylesheets="@regform-style.css" text="LIGAYA R. ABAD, MBA, MBE&#10;Registrar" textAlignment="CENTER" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
