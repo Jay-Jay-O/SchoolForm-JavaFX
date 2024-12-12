@@ -59,6 +59,26 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.lets-plot/lets-plot-kotlin-jvm -->
+        <dependency>
+            <groupId>org.jetbrains.lets-plot</groupId>
+            <artifactId>lets-plot-kotlin-jvm</artifactId>
+            <version>4.9.2</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.lets-plot/lets-plot-common -->
+        <dependency>
+            <groupId>org.jetbrains.lets-plot</groupId>
+            <artifactId>lets-plot-common</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains.lets-plot/base-portable-jvm -->
+        <dependency>
+            <groupId>org.jetbrains.lets-plot</groupId>
+            <artifactId>base-portable-jvm</artifactId>
+            <version>3.2.0</version>
+            <scope>runtime</scope>
+        </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
